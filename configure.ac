@@ -180,6 +180,10 @@ if test "x$enable_python" == xyes ; then
 	AC_SUBST([PYTHON_LIBS])
 	AC_SUBST([PYTHON_CXXFLAGS])
 	AC_SUBST([BOOST_PYTHON_SUFFIX])
+	AC_CHECK_LIB([boost_python], main,
+	        [],
+	        [AC_MSG_ERROR([you do seem to be lacking 'libboost_python'.])]
+	)
 fi
 dnl }}}
 dnl }}}
