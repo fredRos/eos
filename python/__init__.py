@@ -13,7 +13,7 @@
 # this program; if not, write to the Free Software Foundation, Inc., 59 Temple
 # Place, Suite 330, Boston, MA  02111-1307  USA
 
-from _eos import _Parameters
+from ._eos import _Parameters
 
 class Parameters(_Parameters):
     @staticmethod
@@ -46,4 +46,4 @@ class Parameters(_Parameters):
 
         return parameters
 
-from _eos import *
+from ._eos import *
