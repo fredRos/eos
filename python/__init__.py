@@ -47,3 +47,6 @@ class Parameters(_Parameters):
         return parameters
 
 from ._eos import *
+
+from . import plot
+from . import data
